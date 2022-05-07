@@ -1,0 +1,25 @@
+#titulo {
+    background-color: grey;
+    text-align: center;
+}
+
+.texto{
+    text-align: left;
+}
+
+.moldura-lg {
+    width: 600px;
+    text-align: center;
+    
+}
+
+.moldura-mg {
+width: 370;
+margin: auto;
+
+}
+
+.cinza{
+    background-color: gray;
+    width: 650;
+}
