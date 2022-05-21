@@ -1,0 +1,26 @@
+
+public class TestaContas {
+
+	public static void main(String[] args) {
+		
+		Conta conta1 = new Conta ();
+		conta1.numero = 1;
+		conta1.titular = "Gabriel";
+		if(conta1.deposita(-100)==false)
+			System.out.println("Saldo insuficiente");
+		
+		
+		Conta conta2 = new Conta ();
+		conta2.numero = 2;
+		conta2.saldo = 1500;
+		conta2.titular = "Logan";
+		
+		conta1.saca(100);
+		conta2.deposita(500);
+		
+		System.out.println("Saldo da primeira conta: "+conta1.saldo+"/n");
+		System.out.println("Saldo da segunda conta: "+conta2.saldo);
+
+	}
+
+}

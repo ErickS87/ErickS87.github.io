@@ -1,0 +1,37 @@
+
+public class TestaContaAgregacao {
+
+	public static void main(String[] args) {
+
+		Conta conta1 = new Conta();
+		conta1.getTitular().nome = "Gabriel";
+		conta1.getTitular().cpf = "12345678911";
+		conta1.setNumero(1);
+		if (conta1.deposita(-100) == false)
+			System.out.println("Saldo inválido para deoósito para a conta de numero "+conta1.getNumero());
+		if (conta1.saca(100) == false)
+			System.err.println("Saldo insuficiente. A conta só possui " + conta1.getSaldo());
+
+		Conta conta2 = new Conta();
+		conta2.getTitular().nome = "Rodrigo";
+		conta2.getTitular().cpf = "12345678922";
+		conta2.setNumero(25);
+		if (!conta2.deposita(500))
+			System.out.println("Valor inválido para depósito");
+		if (conta2.saca(1001) == false)
+			System.out.println("Saldo insuficiente. A conta só possui " + conta2.getSaldo());
+
+		System.out.println("");
+		conta2.mostraInformacies();
+		
+		System.out.println("Vou transferir 200 reais do Rodrigo para o Gabriel ");
+		conta2.transferePara(conta1, 200);
+		
+		System.out.println("Depois da transferencia;;;");
+		conta1.mostraInformacies();
+		System.out.println("");
+		conta2.mostraInformacies();
+
+	}
+
+}

@@ -1,0 +1,26 @@
+
+public class TestaCanetas {
+	public static void main(String[] args) {
+
+		Caneta umaCaneta = new Caneta();
+		umaCaneta.cor = "Azul";
+		umaCaneta.marca = "Bick";
+		umaCaneta.tampa = false;
+		umaCaneta.tamanho = 8;
+
+		Caneta outraCaneta = new Caneta();
+		outraCaneta.cor = "Preta";
+		outraCaneta.marca = "Bick";
+		outraCaneta.tamanho = 10;
+
+		System.out.println("Uma caneta é " + umaCaneta.cor + " e a outra é " + outraCaneta.cor
+				+ "uma caneta é da marca " + umaCaneta.marca + " e a outra é da marca " + outraCaneta.marca
+				+ "uma caneta tem " + umaCaneta.tamanho + " cm, e a outra tem " + outraCaneta.tamanho + " cm");
+
+		System.out.println("###INFORMAÇÕES DE umaCaneta");
+		System.out.println("Esta é uma caneta de cor " + umaCaneta.cor + " e da marca " + umaCaneta.marca);
+
+		System.out.println("###INFORMAÇÕES DE outraCaneta");
+		System.out.println("Esta já é uma outra caneta de cor " + outraCaneta.cor + " e da marca " + outraCaneta.marca);
+	}
+}
